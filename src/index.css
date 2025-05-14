@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -45,6 +44,11 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Cafe specific colors */
+    --cafe-red: 0 86% 50%;
+    --cafe-yellow: 43 96% 56%;
+    --cafe-dark: 210 20% 15%;
   }
 
   .dark {
@@ -109,5 +113,10 @@
 
   .menu-price {
     @apply text-cafe-red font-bold mt-2 md:mt-0;
+  }
+
+  /* Additional CSS custom properties for gallery */
+  .gallery-item {
+    @apply transition-all duration-300 hover:scale-105;
   }
 }

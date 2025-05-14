@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Menu, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,9 +22,10 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <a href="#home" className="text-cafe-dark hover:text-cafe-red font-medium">Home</a>
+            <Link to="/" className="text-cafe-dark hover:text-cafe-red font-medium">Home</Link>
             <a href="#about" className="text-cafe-dark hover:text-cafe-red font-medium">About</a>
             <a href="#menu" className="text-cafe-dark hover:text-cafe-red font-medium">Menu</a>
+            <Link to="/gallery" className="text-cafe-dark hover:text-cafe-red font-medium">Gallery</Link>
             <a href="#contact" className="text-cafe-dark hover:text-cafe-red font-medium">Contact</a>
           </div>
 
@@ -52,9 +54,10 @@ export const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4">
             <div className="flex flex-col space-y-3">
-              <a href="#home" className="text-cafe-dark hover:text-cafe-red font-medium px-2 py-1">Home</a>
+              <Link to="/" className="text-cafe-dark hover:text-cafe-red font-medium px-2 py-1">Home</Link>
               <a href="#about" className="text-cafe-dark hover:text-cafe-red font-medium px-2 py-1">About</a>
               <a href="#menu" className="text-cafe-dark hover:text-cafe-red font-medium px-2 py-1">Menu</a>
+              <Link to="/gallery" className="text-cafe-dark hover:text-cafe-red font-medium px-2 py-1">Gallery</Link>
               <a href="#contact" className="text-cafe-dark hover:text-cafe-red font-medium px-2 py-1">Contact</a>
               <Button 
                 className="bg-cafe-red hover:bg-red-700 text-white flex items-center justify-center space-x-2"
