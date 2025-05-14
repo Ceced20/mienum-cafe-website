@@ -13,7 +13,7 @@ export const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-cafe-dark mb-4">
-              Welcome to <br> <span className="text-cafe-red">Mie-num</span>
+              Welcome to <br /> <span className="text-cafe-red">Mie-num</span>
             </h1>
             <p className="text-lg md:text-xl mb-6 text-cafe-dark">
               Delicious drinks and tasty meals that will make your taste buds dance!
