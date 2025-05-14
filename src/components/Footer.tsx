@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram, Facebook, Mail } from 'lucide-react';
+import { Instagram, Facebook, Mail, ShoppingCart } from 'lucide-react';
 
 export const Footer = () => {
   return (
